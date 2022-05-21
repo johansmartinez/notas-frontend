@@ -1,0 +1,27 @@
+<div class="notas">
+    <table>
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>PARCIAL 1</th>
+                <th>PARCIAL 2</th>
+                <th>PARCIAL 3</th>
+                <th>FINAL</th>
+                <th>OPERACIÓN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="data-nota" *ngFor="let nota of notasService.notas">
+                <td class="nombre">{{nota.nombre | uppercase}}</td>
+                <td>{{nota.parcial1}}</td>
+                <td>{{nota.parcial2}}</td>
+                <td>{{nota.parcial3}}</td>
+                <td>{{nota | promedio}}</td>
+                <td>
+                    <button type="button" class="delete-button" (click)="delete(nota.id)">ELIMINAR</button>
+                    <button type="button" class="edit-button" (click)="edit(nota)">EDITAR</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

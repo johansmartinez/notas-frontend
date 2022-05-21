@@ -1,0 +1,104 @@
+.card-add{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: max-content;
+    border-radius: 10px;
+}
+.row{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row h2{
+    font-size: 3.4rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: auto auto;
+}
+
+.row button{
+    width: 50px;
+    padding: 5px;
+    background-color: #D82148;
+    color: white;
+    font-size: 2.6rem;
+    border: transparent 1px solid;
+    border-radius: 10px;
+}
+
+.row button:hover{
+    color: #D82148;
+    background-color: white;
+    border: #D82148 1px solid;
+}
+
+.form-add{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-add label{
+    margin-bottom: 20px;
+}
+
+.form-add input{
+    width: 100%;
+    display: block;
+    font-size: 1.8rem;
+    margin: 5px 0px;
+    padding: 5px;
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    border: gray 1px solid;
+}
+
+.prom{
+    margin-top: 20px;
+    display: flex;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.send {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+    border: transparent 1px solid;
+    border-radius: 10px;
+    background-color: #21AA93;
+    color: white;
+}
+
+.valid:hover{
+    border: #21AA93 1px solid;
+    color: #21AA93;
+    font-size: 2.4rem;
+    background-color: transparent;
+    -webkit-transition: background-color 150ms linear;
+    -ms-transition: background-color 150ms linear;
+    transition: background-color 150ms linear;
+}
+
+.p-warning{
+    color: #D82148;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+.swal2-popup{
+    font-family: 'Roboto';
+}

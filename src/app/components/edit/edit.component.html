@@ -1,0 +1,38 @@
+<div class="card-add">
+    <div class="row">
+        <h2>EDITAR NOTA</h2>
+        <button type="button" (click)="close()">X</button>
+    </div>
+    <form #form="ngForm" class="form-add" (ngSubmit)="editNota($event)">
+        
+        <label>
+            Nombre:
+            <input type="text" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]" id="nombre" name="nombre" [(ngModel)]="nota.nombre" #nombre="ngModel" placeholder="Ingrese su nombre completo" required>
+            <p *ngIf="!nombre.valid" class="p-warning">Sólo caracteres alfabéticos son permitidos en este campo</p>
+        </label>
+        <label>
+            Parcial 1:
+            <input type="number" id="parcial1" name="parcial1" [(ngModel)]="nota.parcial1" #parcial1="ngModel" placeholder="Ingrese su nota del parcial 1" min="1.0" max="5.0" step="0.1" required>
+            <p *ngIf="!parcial1.valid" class="p-warning">Sólo se permiten valores númericos entre: 1.0 y 5.0</p>
+        </label>
+        <label>
+            Parcial 2:
+            <input type="number" id="parcial2" name="parcial2" [(ngModel)]="nota.parcial2" #parcial2="ngModel" placeholder="Ingrese su nota del parcial 2" min="1.0" max="5.0" step="0.1" required>
+            <p *ngIf="!parcial2.valid" class="p-warning">Sólo se permiten valores númericos entre: 1.0 y 5.0</p>
+        </label>
+        <label>
+            Parcial 3:
+            <input type="number" id="parcial3" name="parcial3" [(ngModel)]="nota.parcial3" #parcial3="ngModel" placeholder="Ingrese su nota del parcial 3" min="1.0" max="5.0" step="0.1" required>
+            <p *ngIf="!parcial3.valid" class="p-warning">Sólo se permiten valores númericos entre: 1.0 y 5.0</p>
+        </label>
+        <button type="submit" class="send" [disabled]="!form.valid"
+            [class.valid]="form.valid"
+            [class.invalid]="!form.valid"
+        >EDITAR</button>
+    </form>
+    <div class="prom">
+        PROMEDIO:
+        <br>
+        {{nota | promedio}}
+    </div>
+</div>

@@ -1,0 +1,84 @@
+.notas{
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+table{
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+thead{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    height: 4rem;
+    background: #5C7AEA;
+    border-radius: 20px;
+    padding: 10px;
+    border: #5C7AEA 1px solid;
+}
+
+thead td{
+    border: white 1px solid;
+}
+
+tbody tr{
+    margin-bottom: 20px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 1px 100px 67px -87px rgba(0,0,0,0.1);
+}
+
+tbody tr:hover{
+    height: 4.2rem;
+    background-color: #0000001a;
+    -webkit-transition: background-color 150ms linear;
+    -ms-transition: background-color 150ms linear;
+    transition: background-color 150ms linear;
+}
+.data-nota .nombre{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.delete-button{
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    background-color: #D82148;
+    color: white;
+    font-size: 1.2rem;
+    border: transparent 1px solid;
+    border-radius: 10px;
+}
+
+.delete-button:hover{
+    color: #D82148;
+    background-color: white;
+    border: #D82148 1px solid;
+}
+
+.edit-button{
+    margin-left: 5px;
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    background-color: #4D96FF;
+    color: white;
+    font-size: 1.2rem;
+    border: transparent 1px solid;
+    border-radius: 10px;
+}
+
+.edit-button:hover{
+    color: #4D96FF;
+    background-color: white;
+    border: #4D96FF 1px solid;
+}

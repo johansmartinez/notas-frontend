@@ -1,0 +1,23 @@
+
+
+<div class="container">
+  <h1>
+    BIENVENIDO 👋
+  </h1>
+  <p>
+    A continuación se muestran las calificaciones registradas hasta este momento:
+  </p>
+  <div class="reverse-row">
+    <button class="add-button" (click)="showAdd()">AGREGAR</button>
+  </div>
+  <app-notas>
+  </app-notas>
+</div>
+
+<div *ngIf="modalService.modalOpen" class="modal">
+  <div [ngSwitch]="modalService.modalType">
+    <app-add *ngSwitchCase="'ADD'"></app-add>
+    <app-edit *ngSwitchCase="'EDIT'"></app-edit>
+  </div>
+  
+</div>
